@@ -1,4 +1,10 @@
 firebase/serviceAccountKey.json
+firebase/firebase.config.js
+--- a/file:///d%3A/E221/max-it-e221/services-back-end/app-daf/firebase/firebase.config.js
++++ b/file:///d%3A/E221/max-it-e221/services-back-end/app-daf/firebase/firebase.config.js
+@@ -1,4 +1,4 @@
+ const admin = require('firebase-admin');
+ const serviceAccount = require('./serviceAccountKey.json');
 .env
 node_modules/
 # ==============================================    
