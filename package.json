@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js && node insertCitoyens.js"
+    "start": "node src/app.js && node src/insertCitoyens.js"
   },
   "repository": {
     "type": "git",

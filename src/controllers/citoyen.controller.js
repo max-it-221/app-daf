@@ -1,4 +1,4 @@
-const db = require('../firebase/firebase.config');
+const db = require('../../firebase/firebase.config');
 
 exports.getCitoyenByNci = async (req, res) => {
   const { nci } = req.params;
