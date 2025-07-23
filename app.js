@@ -1,14 +1,21 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
-const citoyenRoutes = require('./routes/citoyen.routes');
-const logger = require('./middlewares/logger');
 
-app.use(express.json());
-app.use(logger);
+// Firebase Admin SDK
+const admin = require('firebase-admin');
 
-app.use('/api', citoyenRoutes);
+// Initialise Firebase avec la clé
+admin.initializeApp({
+  credential: admin.credential.cert(require(process.env.GOOGLE_APPLICATION_CREDENTIALS)),
+});
+
+// Exemple de route
+app.get('/', (req, res) => {
+  res.send('App DAF connectée à Firebase 🔥');
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Serveur en cours d'exécution sur http://localhost:${PORT}`);
+  console.log(`🚀 Serveur Express sur le port ${PORT}`);
 });
