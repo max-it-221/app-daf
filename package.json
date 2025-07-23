@@ -1,0 +1,27 @@
+{
+  "name": "app-daf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js && node insertCitoyens.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-it-221/app-daf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/max-it-221/app-daf/issues"
+  },
+  "homepage": "https://github.com/max-it-221/app-daf#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
+    "morgan": "^1.10.1"
+  }
+}
