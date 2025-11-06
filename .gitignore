@@ -7,4 +7,13 @@ firebase/firebase.config.js
  const serviceAccount = require('./serviceAccountKey.json');
 .env
 node_modules/
+# Firebase
+serviceAccountKey.json
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+dist/
 # ==============================================    
